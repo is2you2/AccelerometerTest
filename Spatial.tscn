@@ -25,29 +25,62 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
-margin_left = 225.0
+[node name="hbox" type="HBoxContainer" parent="CenterContainer"]
+margin_left = 60.0
 margin_top = 103.0
-margin_right = 254.0
+margin_right = 900.0
 margin_bottom = 377.0
+rect_min_size = Vector2( 840, 0 )
+
+[node name="acc" type="VBoxContainer" parent="CenterContainer/hbox"]
+margin_right = 418.0
+margin_bottom = 274.0
+size_flags_horizontal = 3
 custom_constants/separation = 32
 
-[node name="x" type="Label" parent="CenterContainer/VBoxContainer"]
-margin_right = 29.0
+[node name="x" type="Label" parent="CenterContainer/hbox/acc"]
+margin_right = 418.0
 margin_bottom = 70.0
 theme = SubResource( 2 )
 text = "X"
 
-[node name="y" type="Label" parent="CenterContainer/VBoxContainer"]
+[node name="y" type="Label" parent="CenterContainer/hbox/acc"]
 margin_top = 102.0
-margin_right = 29.0
+margin_right = 418.0
 margin_bottom = 172.0
 theme = SubResource( 2 )
 text = "Y"
 
-[node name="z" type="Label" parent="CenterContainer/VBoxContainer"]
+[node name="z" type="Label" parent="CenterContainer/hbox/acc"]
 margin_top = 204.0
-margin_right = 29.0
+margin_right = 418.0
+margin_bottom = 274.0
+theme = SubResource( 2 )
+text = "Z"
+
+[node name="gyro" type="VBoxContainer" parent="CenterContainer/hbox"]
+margin_left = 422.0
+margin_right = 840.0
+margin_bottom = 274.0
+size_flags_horizontal = 3
+custom_constants/separation = 32
+
+[node name="x" type="Label" parent="CenterContainer/hbox/gyro"]
+margin_right = 418.0
+margin_bottom = 70.0
+theme = SubResource( 2 )
+text = "X"
+
+[node name="y" type="Label" parent="CenterContainer/hbox/gyro"]
+margin_top = 102.0
+margin_right = 418.0
+margin_bottom = 172.0
+theme = SubResource( 2 )
+text = "Y"
+
+[node name="z" type="Label" parent="CenterContainer/hbox/gyro"]
+margin_top = 204.0
+margin_right = 418.0
 margin_bottom = 274.0
 theme = SubResource( 2 )
 text = "Z"
