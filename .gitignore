@@ -1,0 +1,17 @@
+*.import
+import/*
+*.blend1
+*.translation
+diy_config/*
+android/*
+*.tmp
+html/*
+*.bak
+
+# git_api 무시
+git_api.*
+libgitapi.so
+
+# Mono-specific ignores
+.mono/
+data_*/
